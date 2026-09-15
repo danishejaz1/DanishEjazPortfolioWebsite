@@ -1,10 +1,9 @@
 import { motion } from 'framer-motion'
-import { FiGithub, FiLinkedin, FiMail, FiTwitter } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi'
 
 const socials = [
   { icon: FiGithub, href: 'https://github.com/', label: 'GitHub' },
   { icon: FiLinkedin, href: 'https://linkedin.com/', label: 'LinkedIn' },
-  { icon: FiTwitter, href: 'https://twitter.com/', label: 'Twitter' },
   { icon: FiMail, href: 'mailto:you@example.com', label: 'Email' },
 ]
 

@@ -12,7 +12,7 @@ export default function Hero() {
         transition={{ duration: 0.6 }}
         className="mb-4 text-sm font-medium tracking-[0.2em] text-accent-ice/80 uppercase"
       >
-        Software Engineer
+        Computer & Electrical Engineering
       </motion.p>
 
       <motion.h1
