@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Orbitron", sans-serif;
+  --font-body: "Space Grotesk", sans-serif;
+
+  --color-space-950: #05060f;
+  --color-space-900: #0a0e1f;
+  --color-space-800: #10162e;
+  --color-space-700: #1a2140;
+  --color-nebula-pink: #ff6ec7;
+  --color-nebula-purple: #8b5cf6;
+  --color-nebula-blue: #38bdf8;
+  --color-nebula-cyan: #22d3ee;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-space-950);
+  color: #e6e9f5;
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+#root {
+  position: relative;
+  z-index: 0;
+}
+
+::selection {
+  background: var(--color-nebula-purple);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-space-950);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--color-nebula-purple), var(--color-nebula-blue));
+  border-radius: 999px;
+}
+
+/* Reusable utility classes for the space theme */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, var(--color-nebula-cyan), var(--color-nebula-purple), var(--color-nebula-pink));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass-panel {
+  background: rgba(16, 22, 46, 0.55);
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 0 40px rgba(139, 92, 246, 0.08);
+}
+
+.glow-border {
+  box-shadow: 0 0 0 1px rgba(139, 92, 246, 0.35), 0 0 25px rgba(56, 189, 248, 0.15);
+}
+
+.section-heading {
+  font-family: var(--font-display);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
