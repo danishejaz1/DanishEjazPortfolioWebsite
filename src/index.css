@@ -1,17 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Orbitron", sans-serif;
-  --font-body: "Space Grotesk", sans-serif;
+  --font-display: "Sora", sans-serif;
+  --font-body: "Inter", sans-serif;
 
-  --color-space-950: #05060f;
-  --color-space-900: #0a0e1f;
-  --color-space-800: #10162e;
-  --color-space-700: #1a2140;
-  --color-nebula-pink: #ff6ec7;
-  --color-nebula-purple: #8b5cf6;
-  --color-nebula-blue: #38bdf8;
-  --color-nebula-cyan: #22d3ee;
+  --color-space-950: #05060a;
+  --color-space-900: #0b0e14;
+  --color-space-800: #131722;
+  --color-space-700: #1c2130;
+  --color-accent-ice: #7dd3fc;
+  --color-accent-violet: #a5b4fc;
+  --color-accent-gold: #fbbf24;
 }
 
 html {
@@ -21,7 +20,7 @@ html {
 body {
   margin: 0;
   background: var(--color-space-950);
-  color: #e6e9f5;
+  color: #dbe1f0;
   font-family: var(--font-body);
   overflow-x: hidden;
 }
@@ -32,8 +31,8 @@ body {
 }
 
 ::selection {
-  background: var(--color-nebula-purple);
-  color: white;
+  background: var(--color-accent-violet);
+  color: #05060a;
 }
 
 ::-webkit-scrollbar {
@@ -43,7 +42,7 @@ body {
   background: var(--color-space-950);
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(var(--color-nebula-purple), var(--color-nebula-blue));
+  background: linear-gradient(var(--color-accent-ice), var(--color-accent-violet));
   border-radius: 999px;
 }
 
@@ -53,26 +52,26 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(90deg, var(--color-nebula-cyan), var(--color-nebula-purple), var(--color-nebula-pink));
+  background: linear-gradient(90deg, var(--color-accent-ice), var(--color-accent-violet));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .glass-panel {
-  background: rgba(16, 22, 46, 0.55);
-  border: 1px solid rgba(139, 92, 246, 0.25);
+  background: rgba(19, 23, 34, 0.55);
+  border: 1px solid rgba(125, 211, 252, 0.14);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  box-shadow: 0 0 40px rgba(139, 92, 246, 0.08);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
 }
 
 .glow-border {
-  box-shadow: 0 0 0 1px rgba(139, 92, 246, 0.35), 0 0 25px rgba(56, 189, 248, 0.15);
+  box-shadow: 0 0 0 1px rgba(125, 211, 252, 0.3), 0 0 25px rgba(125, 211, 252, 0.12);
 }
 
 .section-heading {
   font-family: var(--font-display);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }

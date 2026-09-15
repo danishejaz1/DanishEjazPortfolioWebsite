@@ -10,16 +10,16 @@ export default function Hero() {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="mb-4 font-display text-sm tracking-[0.3em] text-nebula-cyan uppercase"
+        className="mb-4 text-sm font-medium tracking-[0.2em] text-accent-ice/80 uppercase"
       >
-        Mission Control
+        Software Engineer
       </motion.p>
 
       <motion.h1
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.1 }}
-        className="font-display text-4xl font-bold text-white sm:text-6xl md:text-7xl"
+        className="font-display text-5xl font-bold tracking-tight text-white sm:text-7xl md:text-8xl"
       >
         Danish Ejaz
       </motion.h1>
@@ -42,13 +42,13 @@ export default function Hero() {
       >
         <a
           href="#projects"
-          className="glow-border rounded-full bg-nebula-purple/20 px-8 py-3 font-medium text-white transition hover:bg-nebula-purple/30"
+          className="glow-border rounded-full bg-accent-ice/10 px-8 py-3 font-medium text-white transition hover:bg-accent-ice/20"
         >
           View Projects
         </a>
         <a
           href="#contact"
-          className="rounded-full border border-slate-500/40 px-8 py-3 font-medium text-slate-200 transition hover:border-nebula-cyan hover:text-nebula-cyan"
+          className="rounded-full border border-slate-500/40 px-8 py-3 font-medium text-slate-200 transition hover:border-accent-ice hover:text-accent-ice"
         >
           Get In Touch
         </a>
@@ -61,7 +61,7 @@ export default function Hero() {
       >
         <span className="text-xs tracking-widest uppercase">Scroll</span>
         <div className="h-9 w-5 rounded-full border border-slate-500/50 p-1">
-          <div className="h-2 w-full rounded-full bg-nebula-cyan" />
+          <div className="h-2 w-full rounded-full bg-accent-ice" />
         </div>
       </motion.div>
     </section>

@@ -24,15 +24,15 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#home" className="font-display text-lg tracking-widest text-white">
-          D<span className="text-gradient">E</span>
+        <a href="#home" className="font-display text-xl font-bold text-white">
+          Danish<span className="text-gradient">.</span>
         </a>
         <ul className="hidden gap-8 md:flex">
           {links.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm font-medium text-slate-300 transition-colors hover:text-nebula-cyan"
+                className="text-sm font-medium text-slate-300 transition-colors hover:text-accent-ice"
               >
                 {link.label}
               </a>

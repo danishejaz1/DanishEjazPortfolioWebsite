@@ -9,9 +9,9 @@ export default function Skills() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.4 }}
         transition={{ duration: 0.6 }}
-        className="section-heading mb-12 text-2xl text-white sm:text-3xl"
+        className="section-heading mb-12 text-3xl text-white sm:text-4xl"
       >
-        Tech <span className="text-gradient">Arsenal</span>
+        Tech <span className="text-gradient">Stack</span>
       </motion.h2>
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -24,7 +24,7 @@ export default function Skills() {
             transition={{ duration: 0.5, delay: i * 0.1 }}
             className="glass-panel rounded-2xl p-6"
           >
-            <h3 className="font-display text-sm tracking-widest text-nebula-cyan uppercase">
+            <h3 className="font-display text-sm font-semibold tracking-wide text-accent-ice">
               {group.category}
             </h3>
             <ul className="mt-4 space-y-2">

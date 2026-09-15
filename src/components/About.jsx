@@ -14,7 +14,7 @@ export default function About() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.4 }}
         transition={{ duration: 0.6 }}
-        className="section-heading mb-12 text-2xl text-white sm:text-3xl"
+        className="section-heading mb-12 text-3xl text-white sm:text-4xl"
       >
         About <span className="text-gradient">Me</span>
       </motion.h2>
@@ -44,7 +44,7 @@ export default function About() {
         >
           {stats.map((stat) => (
             <div key={stat.label} className="glass-panel rounded-xl p-6 text-center">
-              <p className="font-display text-2xl text-nebula-cyan sm:text-3xl">{stat.value}</p>
+              <p className="font-display text-2xl text-accent-ice sm:text-3xl">{stat.value}</p>
               <p className="mt-2 text-xs text-slate-400 uppercase tracking-wide">{stat.label}</p>
             </div>
           ))}

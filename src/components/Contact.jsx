@@ -21,12 +21,12 @@ export default function Contact() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.4 }}
         transition={{ duration: 0.6 }}
-        className="section-heading mb-4 text-2xl text-white sm:text-3xl"
+        className="section-heading mb-4 text-3xl text-white sm:text-4xl"
       >
-        Transmit a <span className="text-gradient">Message</span>
+        Let's <span className="text-gradient">Connect</span>
       </motion.h2>
       <p className="mb-12 text-slate-300">
-        Have a project in mind or just want to connect? Send a signal below.
+        Have a project in mind or just want to say hi? My inbox is always open.
       </p>
 
       <motion.form
@@ -43,14 +43,14 @@ export default function Contact() {
             name="name"
             placeholder="Name"
             required
-            className="rounded-lg border border-slate-600/40 bg-space-900/60 px-4 py-3 text-sm text-white outline-none focus:border-nebula-cyan"
+            className="rounded-lg border border-slate-600/40 bg-space-900/60 px-4 py-3 text-sm text-white outline-none focus:border-accent-ice"
           />
           <input
             type="email"
             name="email"
             placeholder="Email"
             required
-            className="rounded-lg border border-slate-600/40 bg-space-900/60 px-4 py-3 text-sm text-white outline-none focus:border-nebula-cyan"
+            className="rounded-lg border border-slate-600/40 bg-space-900/60 px-4 py-3 text-sm text-white outline-none focus:border-accent-ice"
           />
         </div>
         <textarea
@@ -58,13 +58,13 @@ export default function Contact() {
           placeholder="Message"
           rows={5}
           required
-          className="w-full rounded-lg border border-slate-600/40 bg-space-900/60 px-4 py-3 text-sm text-white outline-none focus:border-nebula-cyan"
+          className="w-full rounded-lg border border-slate-600/40 bg-space-900/60 px-4 py-3 text-sm text-white outline-none focus:border-accent-ice"
         />
         <button
           type="submit"
-          className="glow-border w-full rounded-full bg-nebula-purple/20 px-8 py-3 font-medium text-white transition hover:bg-nebula-purple/30"
+          className="glow-border w-full rounded-full bg-accent-ice/10 px-8 py-3 font-medium text-white transition hover:bg-accent-ice/20"
         >
-          Send Transmission
+          Send Message
         </button>
       </motion.form>
 
@@ -76,7 +76,7 @@ export default function Contact() {
             target="_blank"
             rel="noreferrer"
             aria-label={label}
-            className="text-xl text-slate-400 transition hover:text-nebula-cyan"
+            className="text-xl text-slate-400 transition hover:text-accent-ice"
           >
             <Icon />
           </a>
